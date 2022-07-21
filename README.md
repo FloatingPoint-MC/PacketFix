@@ -30,9 +30,9 @@ buf.writeByte((int) (this.facingZ * 16.0F));
 3. 像这样把16.0F改成FixEngine.fixRightClick()
 
 ```
-this.facingX = (float) (buf.readUnsignedByte() * FixEngine.fixRightClick());
-this.facingY = (float) (buf.readUnsignedByte() * FixEngine.fixRightClick());
-this.facingZ = (float) (buf.readUnsignedByte() * FixEngine.fixRightClick());
+this.facingX = (float) (buf.readUnsignedByte() / FixEngine.fixRightClick());
+this.facingY = (float) (buf.readUnsignedByte() / FixEngine.fixRightClick());
+this.facingZ = (float) (buf.readUnsignedByte() / FixEngine.fixRightClick());
 ```
 ```
 buf.writeByte((int) (this.facingX * FixEngine.fixRightClick()));
