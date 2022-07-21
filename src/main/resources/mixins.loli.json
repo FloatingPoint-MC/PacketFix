@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "me.vlouboos.packetfix.injection.mixins",
+  "refmap": "mixins.packetfix.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinC08PacketPlayerBlockPlacement"
+  ],
+  "client": [
+    "MixinEntityPlayerSP"
+  ]
+}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "packetfix",
+  "name": "PacketFix",
+  "description": "Fix the C08 & C03 Packet for the Game",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["vlouboos"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
