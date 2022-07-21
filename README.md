@@ -27,17 +27,17 @@ buf.writeByte((int) (this.facingY * 16.0F));
 buf.writeByte((int) (this.facingZ * 16.0F));
 ```
 
-3. 像这样把16.0F去掉
+3. 像这样把16.0F改成FixEngine.fixRightClick()
 
 ```
-this.facingX = (float) buf.readUnsignedByte();
-this.facingY = (float) buf.readUnsignedByte();
-this.facingZ = (float) buf.readUnsignedByte();
+this.facingX = (float) (buf.readUnsignedByte() * FixEngine.fixRightClick());
+this.facingY = (float) (buf.readUnsignedByte() * FixEngine.fixRightClick());
+this.facingZ = (float) (buf.readUnsignedByte() * FixEngine.fixRightClick());
 ```
 ```
-buf.writeByte((int) this.facingX);
-buf.writeByte((int) this.facingY);
-buf.writeByte((int) this.facingZ);
+buf.writeByte((int) (this.facingX * FixEngine.fixRightClick()));
+buf.writeByte((int) (this.facingY * FixEngine.fixRightClick()));
+buf.writeByte((int) (this.facingZ * FixEngine.fixRightClick()));
 ```
 
 4. 大功告成, Enjoy free source and buy Float Client :3
