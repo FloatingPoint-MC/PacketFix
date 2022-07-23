@@ -1,6 +1,6 @@
 package me.vlouboos.packetfix.utils;
 
-import viamcp.ViaMCP;
+import de.enzaxd.viaforge.ViaForge;
 
 public class FixEngine {
     /**
@@ -8,7 +8,7 @@ public class FixEngine {
      * Made by vlouboos
      */
     public static float fixRightClick() {
-        if (ViaMCP.getInstance().getVersion() == ViaMCP.PROTOCOL_VERSION) {
+        if (ViaForge.getInstance().getVersion() == 47) {
             return 16.0F;
         } else {
             return 1.0F;
